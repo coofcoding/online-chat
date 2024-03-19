@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Carousel } from 'flowbite-react';
+import { Carousel } from "flowbite-react";
+import { Mail, Lock } from "lucide-react";
 
 export const LoginPage = () => {
     return (
@@ -46,16 +47,22 @@ export const LoginPage = () => {
                         start to interact with other users!
                     </h3>
                     <form className="flex w-10/12 flex-col justify-center items-center gap-y-3">
-                        <input
-                            className="outline-none border border-slate-300 w-full h-14 p-4 rounded-md focus:border-blue-400 ring ring-white transition-all duration-200 placeholder:text-slate-300 text-slate-600 focus:ring-blue-500"
-                            type="email"
-                            placeholder="email"
-                        />
-                        <input
-                            className="outline-none border border-slate-300 w-full h-14 p-4 rounded-md focus:border-blue-400 ring ring-white transition-all duration-200 placeholder:text-slate-300 text-slate-600 focus:ring-blue-500"
-                            type="password"
-                            placeholder="password"
-                        />
+                        <div className="w-full relative">
+                            <Mail className="w-6 h-6 absolute left-8 top-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-400" />
+                            <input
+                                className="outline-none border border-slate-300 w-full h-14 pl-14 p-4 rounded-md focus:border-blue-400 ring ring-white transition-all duration-200 placeholder:text-slate-300 text-slate-600 focus:ring-blue-500"
+                                type="email"
+                                placeholder="email"
+                            />
+                        </div>
+                        <div className="w-full relative">
+                            <Lock className="w-6 h-6 absolute left-8 top-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-400" />
+                            <input
+                                className="outline-none border border-slate-300 w-full h-14 pl-14 p-4 rounded-md focus:border-blue-400 ring ring-white transition-all duration-200 placeholder:text-slate-300 text-slate-600 focus:ring-blue-500"
+                                type="password"
+                                placeholder="password"
+                            />
+                        </div>
                         <button className="overflow-hidden mt-5 w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">
                             Sign in
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
