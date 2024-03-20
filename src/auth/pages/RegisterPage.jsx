@@ -6,16 +6,16 @@ export const RegisterPage = () => {
     return (
         <>
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            <div className="flex flex-col md:flex-row h-screen w-full justify-center items-center">
-                <div className="flex justify-start items-center flex-col h-5/6 w-full md:w-1/2 lg:w-1/3 pt-12 border bg-white border-slate-200">
+            <div className="flex flex-col-reverse md:flex-row h-screen w-full justify-center items-center">
+                <div className="flex justify-start items-center flex-col h-screen md:h-5/6 w-full md:w-1/2 lg:w-1/3 pt-8 border bg-white border-slate-200">
                     <h1 className="text-slate-400 text-5xl mb-10" id="logo">
                         Chatt<span className="text-blue-400">!ng</span>
                     </h1>
-                    <h3 className="text-slate-400 mb-4 text-xl font-light text-center md:mb-10">
+                    <h3 className="text-slate-400 mb-4 text-xl font-light text-center md:mb-5 px-4">
                         create an account and start to meet new people!
                     </h3>
                     <form className="flex w-10/12 flex-col justify-center items-center gap-y-3">
-                        <div className="flex justify-center items-center gap-3">
+                        <div className="flex flex-col w-full md:flex-row justify-center items-center gap-3">
                             <div className="w-full relative">
                                 <BookUser className="w-6 h-6 absolute left-8 top-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-400" />
                                 <input
@@ -41,7 +41,7 @@ export const RegisterPage = () => {
                                 placeholder="email"
                             />
                         </div>
-                        <div className="flex items-center justify-center gap-3">
+                        <div className="flex w-full flex-col md:flex-row items-center justify-center gap-3">
                             <div className="w-full relative">
                                 <Lock className="w-6 h-6 absolute left-8 top-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-400" />
                                 <input
@@ -65,7 +65,7 @@ export const RegisterPage = () => {
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-blue-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-blue-600 rotate-12 transform scale-x-0 group-hover:scale-x-50 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
-                            <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10">
+                            <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-4 z-10">
                                 Continue
                             </span>
                         </button>
@@ -79,14 +79,14 @@ export const RegisterPage = () => {
                     <span className="mt-7 text-slate-400">
                         Have you an account?{" "}
                         <Link
-                            to="/"
+                            to="/auth/login"
                             className="underline underline-offset-2 hover:underline-offset-4 text-blue-400 cursor-pointer transition-all duration-200"
                         >
                             Sign in
                         </Link>
                     </span>
                 </div>
-                <div className="h-5/6 w-full md:w-1/2 lg:w-1/3">
+                <div className="hidden md:block h-5/6 w-full md:w-1/2 lg:w-1/3">
                     <Carousel slideInterval={2000} className="*:rounded-none">
                         <img
                             src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

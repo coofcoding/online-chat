@@ -68,18 +68,18 @@ export const LoginPage = () => {
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-blue-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
                             <span className="absolute w-36 h-32 -top-8 -left-2 bg-blue-600 rotate-12 transform scale-x-0 group-hover:scale-x-50 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
-                            <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10">
+                            <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-4 z-10">
                                 Continue
                             </span>
                         </button>
                     </form>
-                    <div className="w-10/12 h-3 border-b text-center mt-10">
+                    <div className="w-10/12 h-3 border-b text-center mt-4 md:mt-10">
                         <span className="relative translate-y-40 bg-white px-3 text-slate-300">
                             or
                         </span>
                     </div>
 
-                    <span className="mt-12 text-slate-400">
+                    <span className="mt-5 md:mt-12 mb-5 text-slate-400">
                         Are you new?{" "}
                         <Link
                             to="register"
