@@ -38,7 +38,7 @@ export const LoginPage = () => {
                 </div>
                 <div className="flex justify-start items-center flex-col h-5/6 w-full md:w-1/2 lg:w-1/3 pt-12 border bg-white border-slate-200">
                     <h1
-                        className="text-slate-400 text-5xl mb-10 md:mb-20"
+                        className="text-slate-400 text-5xl mb-10"
                         id="logo"
                     >
                         Chatt<span className="text-blue-400">!ng</span>
