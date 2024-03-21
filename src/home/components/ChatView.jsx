@@ -1,5 +1,11 @@
+import { HeaderChat, MessageContent, WriteField } from '../../chat/components';
+
 export const ChatView = () => {
   return (
-    <div>ChatView</div>
+    <>
+      <HeaderChat/>
+      <MessageContent/>
+      <WriteField/>
+    </>
   )
 }
