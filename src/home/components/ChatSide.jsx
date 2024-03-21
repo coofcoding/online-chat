@@ -1,3 +1,14 @@
+import { NoSelected, ChatView } from "./";
+
 export const ChatSide = () => {
-    return <div className="bg-slate-100 col-span-3 border"></div>;
+
+    const chatSelected = false;
+
+    return <div className="bg-slate-100 col-span-3 border">
+        {
+            ( chatSelected )
+            ? <ChatView/>
+            : <NoSelected/>
+        }
+    </div>;
 };
