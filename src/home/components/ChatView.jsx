@@ -1,11 +1,11 @@
-import { HeaderChat, MessageContent, WriteField } from '../../chat/components';
+import { HeaderChat, MessageContent, WriteField } from "../../chat/components";
 
 export const ChatView = () => {
-  return (
-    <>
-      <HeaderChat/>
-      <MessageContent/>
-      <WriteField/>
-    </>
-  )
-}
+    return (
+        <div className="grid h-full overflow-hidden max-h-screen px-2">
+            <HeaderChat />
+            <MessageContent />
+            <WriteField />
+        </div>
+    );
+};

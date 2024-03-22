@@ -2,7 +2,7 @@ import { Send } from "lucide-react";
 
 export const WriteField = () => {
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex items-center mt-6 pb-2">
             <Send className="absolute right-5 text-slate-500" />
             <input
                 placeholder="search..."
