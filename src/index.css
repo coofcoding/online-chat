@@ -5,29 +5,32 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #e7e7e7;
     border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #d0d0d0;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #69a2ca;
-  }
+}
 
 body {
-    font-family: 'Montserrat Variable', sans-serif;
+    font-family: "Montserrat Variable", sans-serif;
 }
 
 #logo {
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
+}
+.swal2-input {
+    @apply p-3 rounded-xl bg-slate-200 focus:bg-white outline-none duration-200 transition-all font-semibold placeholder:text-slate-400 border border-transparent focus:border-blue-300 ring ring-transparent focus:ring-blue-200 text-slate-500;
 }
