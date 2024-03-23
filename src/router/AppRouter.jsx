@@ -4,7 +4,7 @@ import { LoginPage, RegisterPage, HomePage } from "../auth/pages";
 import { ContentPage } from "../home/pages/ContentPage";
 
 export const AppRouter = () => {
-    const [status, setStatus] = useState("authenticated");
+    const [status, setStatus] = useState("not-authenticated");
 
     return (
         <Routes>
