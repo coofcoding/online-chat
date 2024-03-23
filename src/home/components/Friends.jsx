@@ -6,6 +6,7 @@ export const Friends = () => {
       <Contact
         name="Lora Jean"
         photo="https://img.fixthephoto.com/blog/images/gallery/news_preview_mob_image__preview_11368.png"
+        isActive="true"
       />
       <Contact
         name="David Goggins"
