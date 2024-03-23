@@ -2,7 +2,7 @@ import { UserRoundSearch } from "lucide-react";
 
 export const SearchBar = () => {
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex items-center mb-6">
             <UserRoundSearch className="absolute right-5 text-slate-500" />
             <input
                 placeholder="search..."

@@ -4,7 +4,7 @@ import { Ellipsis } from "lucide-react";
 
 export const HeadBar = () => {
     return (
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full mb-6">
             <div className="flex justify-center items-center gap-3">
                 <Avatar
                     img="/photo_example.png"
